@@ -67,7 +67,7 @@
 .inputBase {
   width: 100%;
   height: 50px;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
   color: #0000009e;
   outline: none;
@@ -100,5 +100,8 @@
   }
   .actionsBtnContainer {
     width: 50%;
+  }
+  .inputBase{
+    font-size: 28px;
   }
 }

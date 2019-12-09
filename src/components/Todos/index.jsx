@@ -6,7 +6,6 @@ import classes from "./style.module.css";
 
 // Todo component (eact checkbox, title and delete icon)
 const Todo = ({ todo, rmTodo, toggleCheckbox, updateTodowithId }) => {
-
   // Destucturing from todo prop
   const { title, id, isCompleted } = todo;
 
@@ -23,8 +22,11 @@ const Todo = ({ todo, rmTodo, toggleCheckbox, updateTodowithId }) => {
   };
 
   // Trigering the redux state update action
-  const onEditChange = event => {
-    if (["Enter", ",", "Tab", "Click"].includes(event.key)) {
+  const onEditChange = (event, mouse = false) => {
+    if (
+      (["Enter", ",", "Tab", "Click"].includes(event.key) || mouse) &&
+      editChange.length
+    ) {
       updateTodowithId(editChange, id);
       setEditing(false);
     }
@@ -50,6 +52,7 @@ const Todo = ({ todo, rmTodo, toggleCheckbox, updateTodowithId }) => {
                 id={id}
                 onChange={e => setEditChange(e.target.value)}
                 onKeyUp={e => onEditChange(e)}
+                onBlur={e => onEditChange(e, true)}
               />
             ) : (
               <p
