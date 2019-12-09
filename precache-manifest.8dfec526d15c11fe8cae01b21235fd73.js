@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70db45e5d1b1c945d424d4d9aa9c6ef1",
+    "revision": "1367a861f2115ef55aa564657bcc37ba",
     "url": "/Todo-RoaDo/index.html"
   },
   {
-    "revision": "f66fdc16799c9029e9d7",
-    "url": "/Todo-RoaDo/static/css/main.c3719f78.chunk.css"
+    "revision": "6d6db4cdae7dbad332e3",
+    "url": "/Todo-RoaDo/static/css/main.1db3bb72.chunk.css"
   },
   {
     "revision": "4290c73e400f0724ed57",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Todo-RoaDo/static/js/2.bff2b661.chunk.js.LICENSE"
   },
   {
-    "revision": "f66fdc16799c9029e9d7",
-    "url": "/Todo-RoaDo/static/js/main.d500c04b.chunk.js"
+    "revision": "6d6db4cdae7dbad332e3",
+    "url": "/Todo-RoaDo/static/js/main.cc53c6f1.chunk.js"
   },
   {
     "revision": "8b30a9c04dc576da1ab6",
